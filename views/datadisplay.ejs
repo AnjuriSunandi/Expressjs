@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <table border = "3">
+      <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        <th>Marks</th>
+        <th>Branch</th>
+      </tr>
+      <% rows.forEach((row)=>{ %>
+        <tr>
+          <td><%=row.Name%></td>
+          <td><%=row.mobile%></td>
+          <td><%=row.Email%></td>
+          <td><%=row.Marks%></td>
+          <td><%=row.Branch%></td>
+        </tr>
+
+      <% }) %>
+    </table>
+    
+  </body>
+</html>
